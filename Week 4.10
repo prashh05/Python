@@ -1,0 +1,16 @@
+n=int(input())
+l1=[]
+l2=[]
+c=0
+while(n>0):
+    l1.append(n%10)
+    n//=10
+l=[0,0,0,0,0,0,0,0,0,0]
+for i in range(len(l1)):
+    l[l1[i]]+=1
+for i in l:
+    if(i==1):
+        l2.append(i)
+for i in l2:
+    c+=1
+print(c)
