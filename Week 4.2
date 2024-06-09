@@ -1,0 +1,13 @@
+d=0;c=0
+l=[]
+nl=[]
+while(n>0):
+    d=n%10
+    l.append(d)
+    n=n//10
+for i in l:
+    while i not in nl:
+        nl.append(i)
+for i in nl:
+    c+=1
+print(c)
