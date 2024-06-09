@@ -1,0 +1,17 @@
+temp=n
+temp1=n
+s=0;c=0;d=0
+while(n>0):
+    d=n%10
+    c+=1
+    n//=10
+while(temp>0):
+    d=temp%10
+    s+=d**c
+    c-=1
+    temp//=10
+if(s==temp1):
+    print("Yes")
+else:
+    print("No")
+
