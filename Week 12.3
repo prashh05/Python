@@ -1,0 +1,18 @@
+num=int(input())
+l1=[]
+s=input()
+l1=s.split(" ")
+l1=[int(x) for x in l1]
+l2=[]
+sum=0
+m=int(input())
+for i in range(m):
+    s=input()
+    l=s.split(" ")
+    l=[int(x) for x in l]
+    l2.append(l)
+for value in l2:
+    if value[0] in l1:
+        sum+=value[1]
+        l1.remove(value[0])
+print(sum)
